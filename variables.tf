@@ -12,7 +12,7 @@ variable "server_type" {
 }
 
 variable "dokploy_server_type" {
-  default = "cx23"
+  default = "cx33"
 }
 
 variable "os_type" {

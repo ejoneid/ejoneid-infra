@@ -8,6 +8,13 @@ resource "hcloud_zone_rrset" "wildcard_a" {
   zone = hcloud_zone.ejoneid_dev.name
   name = "*"
   type = "A"
+  records = [{ value = hcloud_server.dokploy.ipv4_address }]
+}
+
+resource "hcloud_zone_rrset" "coolify" {
+  zone = hcloud_zone.ejoneid_dev.name
+  name = "coolify"
+  type = "A"
   records = [{ value = hcloud_server.coolify.ipv4_address }]
 }
 
