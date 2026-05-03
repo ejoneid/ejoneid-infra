@@ -24,11 +24,6 @@ import {
 }
 
 import {
-  to = hcloud_server.coolify
-  id = var.coolify_server_id
-}
-
-import {
   to = hcloud_zone_rrset.wildcard_a
   id = "${var.ejoneid_zone_id}/*/A"
 }
